@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="4" fill="#121214"/>
+  <!-- Film Perforations -->
+  <rect x="3" y="4" width="3" height="4" rx="0.5" fill="#B84A3A"/>
+  <rect x="3" y="11" width="3" height="4" rx="0.5" fill="#D8D4CC" opacity="0.4"/>
+  <rect x="3" y="18" width="3" height="4" rx="0.5" fill="#D8D4CC" opacity="0.4"/>
+  <rect x="3" y="25" width="3" height="4" rx="0.5" fill="#B84A3A"/>
+  <!-- Rupesh Lettermark 'R' -->
+  <text x="17" y="22" font-family="'Playfair Display', serif" font-weight="700" font-size="18" fill="#F5F3EE" text-anchor="middle">R</text>
+  <!-- Frame Line -->
+  <line x1="8" y1="2" x2="8" y2="30" stroke="#2A2A2E" stroke-width="1"/>
+</svg>
+
