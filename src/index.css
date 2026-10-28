@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  ::selection {
+    background-color: #B84A3A;
+    color: #FFFFFF;
+  }
+
+  /* Custom subtle scrollbar (Light) */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5F3EE;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C4BFB4;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9A958A;
+  }
+
+  /* Custom subtle scrollbar (Dark) */
+  html.dark ::-webkit-scrollbar-track {
+    background: #0D0D0F;
+  }
+
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #27272C;
+    border-radius: 4px;
+  }
+
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #3E3E46;
+  }
+}
+
+/* Cinematic Aspect Ratios */
+.aspect-cinemascope {
+  aspect-ratio: 2.39 / 1;
+}
+
+.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-9-16 {
+  aspect-ratio: 9 / 16;
+}
+
+/* Subtle Film Texture Overlay */
+.cinema-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+html.dark .cinema-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 0);
+}
+
+/* Focus styles for keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #B84A3A;
+  outline-offset: 3px;
+}
+
